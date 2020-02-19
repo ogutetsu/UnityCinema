@@ -6593,6 +6593,69 @@ RectTransform:
   m_AnchoredPosition: {x: 853.3872, y: 524.67456}
   m_SizeDelta: {x: 1676, y: 1014}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &504349846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 504349848}
+  - component: {fileID: 504349847}
+  m_Layer: 0
+  m_Name: Light Probe Group
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!220 &504349847
+LightProbeGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504349846}
+  m_Enabled: 1
+  m_SourcePositions:
+  - {x: 1, y: 1, z: 1}
+  - {x: 1, y: 1, z: -1}
+  - {x: 1, y: -1, z: 1}
+  - {x: 1, y: -1, z: -1}
+  - {x: -0.47017044, y: 1, z: -0.2521081}
+  - {x: -0.47017044, y: 1, z: -2.2521079}
+  - {x: -0.47017044, y: -1, z: -0.2521081}
+  - {x: -0.47017044, y: -1, z: -2.2521079}
+  - {x: 1.2069482, y: 1, z: -0.2521081}
+  - {x: -0.8773791, y: -1, z: 1}
+  - {x: -0.8773791, y: -1, z: -1}
+  - {x: -0.8773791, y: 1, z: -1}
+  - {x: -2.5544977, y: 1, z: 1}
+  - {x: -2.5544977, y: -1, z: 1}
+  - {x: -2.5544977, y: -1, z: -1}
+  - {x: -2.5544977, y: 1, z: -1}
+  - {x: -0.8773791, y: 1, z: 1}
+  - {x: -2.5544977, y: 1, z: -0.2521081}
+  - {x: -2.5544977, y: -1, z: -0.2521081}
+  - {x: -2.5544977, y: -1, z: -2.2521079}
+  - {x: -2.5544977, y: 1, z: -2.2521079}
+  - {x: -0.8773791, y: 1, z: -0.2521081}
+  m_Dering: 1
+--- !u!4 &504349848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 504349846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.66, z: -38.78}
+  m_LocalScale: {x: 3, y: 1, z: 3}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &523405132
 GameObject:
   m_ObjectHideFlags: 0
@@ -10659,7 +10722,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1466098144
 Transform:
   m_ObjectHideFlags: 0
