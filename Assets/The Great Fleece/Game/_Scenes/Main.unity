@@ -480,7 +480,7 @@ GameObject:
   - component: {fileID: 31165685}
   - component: {fileID: 31165684}
   m_Layer: 0
-  m_Name: CM vcam1
+  m_Name: CM Overhead Shot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29455,8 +29455,12 @@ PlayableDirector:
   m_SceneBindings:
   - key: {fileID: -8640797318792302487, guid: d0c324b033ee06e4485f7dfb741492d7, type: 2}
     value: {fileID: 171029215}
+  - key: {fileID: -1934959420855171049, guid: d0c324b033ee06e4485f7dfb741492d7, type: 2}
+    value: {fileID: 2043896032}
   m_ExposedReferences:
-    m_References: []
+    m_References:
+    - 82182e3092b636147b268070b6483649: {fileID: 31165684}
+    - 45012d53ac0d12d47936f505dc82f5fe: {fileID: 1180757036}
 --- !u!1001 &1592252035
 PrefabInstance:
   m_ObjectHideFlags: 0
