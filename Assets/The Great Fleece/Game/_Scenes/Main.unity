@@ -372,6 +372,8 @@ PlayableDirector:
     value: {fileID: 1430022028}
   - key: {fileID: -5102765673428051788, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
     value: {fileID: 1703690876}
+  - key: {fileID: -5718555992379228469, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
+    value: {fileID: 1161626559}
   m_ExposedReferences:
     m_References:
     - dd2c6da28d8898c44adaf38987e3ce3b: {fileID: 572551983}
@@ -19308,7 +19310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4931160109606720, guid: 6c4f6fe08bd85514fa49752d89055191, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.1
+      value: -1.78
       objectReference: {fileID: 0}
     - target: {fileID: 4931160109606720, guid: 6c4f6fe08bd85514fa49752d89055191, type: 3}
       propertyPath: m_LocalPosition.y
@@ -26476,6 +26478,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1161626558}
   - component: {fileID: 1161626557}
+  - component: {fileID: 1161626559}
   m_Layer: 0
   m_Name: CM Rise to Reveal
   m_TagString: Untagged
@@ -26516,14 +26519,33 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1161626556}
-  m_LocalRotation: {x: -0.007435134, y: -0.924275, z: 0.018025508, w: -0.38122904}
+  m_LocalRotation: {x: -0.0074351346, y: -0.924275, z: 0.01802551, w: -0.38122904}
   m_LocalPosition: {x: -10.004946, y: 1.5168309, z: 37.463207}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 891447087}
   m_Father: {fileID: 95446331}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -0.00000008962513, y: 0.2272786, z: 0.00000003190661}
+--- !u!95 &1161626559
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161626556}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1163027015
 GameObject:
   m_ObjectHideFlags: 0
@@ -34622,7 +34644,7 @@ Transform:
   - {fileID: 1422027755}
   m_Father: {fileID: 95446331}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 27.39147, y: 311.3628, z: 8.985438}
 --- !u!95 &1703690876
 Animator:
   serializedVersion: 3
@@ -45336,7 +45358,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: -0.005977166, y: 0.086297914, z: -0.0005214622, w: 0.75289017}
+  m_LocalRotation: {x: -0.055123832, y: 0.79587424, z: -0.0048091346, w: 0.051614232}
   m_LocalPosition: {x: 9.2567215, y: 1.5955284, z: -11.333807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
