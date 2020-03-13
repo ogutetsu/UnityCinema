@@ -368,12 +368,14 @@ PlayableDirector:
     value: {fileID: 2047310253}
   - key: {fileID: 7229200838085757589, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
     value: {fileID: 2043896032}
-  - key: {fileID: 2605423273572135849, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
-    value: {fileID: 1430022028}
   - key: {fileID: -5102765673428051788, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
     value: {fileID: 1703690876}
   - key: {fileID: -5718555992379228469, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
     value: {fileID: 1161626559}
+  - key: {fileID: 6962072799935072483, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
+    value: {fileID: 1430022028}
+  - key: {fileID: -4614815601443897131, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
+    value: {fileID: 966789937}
   m_ExposedReferences:
     m_References:
     - dd2c6da28d8898c44adaf38987e3ce3b: {fileID: 572551983}
@@ -22454,6 +22456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 966789936}
   - component: {fileID: 966789935}
+  - component: {fileID: 966789937}
   m_Layer: 0
   m_Name: CM Rise from Marble
   m_TagString: Untagged
@@ -22502,6 +22505,25 @@ Transform:
   m_Father: {fileID: 95446331}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &966789937
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966789934}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &967839853
 GameObject:
   m_ObjectHideFlags: 3
@@ -30675,7 +30697,7 @@ Transform:
   - {fileID: 676322284}
   m_Father: {fileID: 95446331}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 4.812777, y: 0.1086659, z: 359.8757}
 --- !u!95 &1430022028
 Animator:
   serializedVersion: 3
@@ -45358,7 +45380,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: -0.055123832, y: 0.79587424, z: -0.0048091346, w: 0.051614232}
+  m_LocalRotation: {x: -0.005977166, y: 0.086297914, z: -0.0005214622, w: -0.99989176}
   m_LocalPosition: {x: 9.2567215, y: 1.5955284, z: -11.333807}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
