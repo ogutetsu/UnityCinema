@@ -378,6 +378,8 @@ PlayableDirector:
     value: {fileID: 966789937}
   - key: {fileID: -3758896805193112231, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
     value: {fileID: 1986138972}
+  - key: {fileID: -1042184583910175964, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
+    value: {fileID: 1669217620}
   m_ExposedReferences:
     m_References:
     - dd2c6da28d8898c44adaf38987e3ce3b: {fileID: 572551983}
@@ -1091,7 +1093,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 66343034}
   m_LocalRotation: {x: -0.1545174, y: -0.8143465, z: 0.2519059, w: -0.49950746}
-  m_LocalPosition: {x: -3.9391117, y: 2.924432, z: -105.76262}
+  m_LocalPosition: {x: -5.16, y: 3.85, z: -106.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 967839854}
@@ -34147,6 +34149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1669217619}
   - component: {fileID: 1669217618}
+  - component: {fileID: 1669217620}
   m_Layer: 0
   m_Name: CM Sleeping Guard
   m_TagString: Untagged
@@ -34195,6 +34198,25 @@ Transform:
   m_Father: {fileID: 95446331}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1669217620
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669217617}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1675700363
 GameObject:
   m_ObjectHideFlags: 0
@@ -45434,8 +45456,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: 0.09826341, y: -0.6820915, z: 0.092568055, w: 0.7186979}
-  m_LocalPosition: {x: 5.62, y: 2.96, z: 30.68}
+  m_LocalRotation: {x: -0.1545174, y: -0.8143465, z: 0.2519059, w: -0.49950746}
+  m_LocalPosition: {x: -5.16, y: 3.85, z: -106.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
