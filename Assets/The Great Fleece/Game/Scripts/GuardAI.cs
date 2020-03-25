@@ -26,6 +26,38 @@ public class GuardAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        if (currentTarget != null)
+        {
+            float distance = Vector3.Distance(transform.position, currentTarget.position);
+            if (distance < 1.0f)
+            {
+                if (IsWaypoint(1) && currentTarget != wayPoints[1])
+                {
+                    currentTarget = wayPoints[1];
+                    agent.SetDestination(currentTarget.position);
+                }
+                else if (IsWaypoint(2))
+                {
+                    currentTarget = wayPoints[2];
+                    agent.SetDestination(currentTarget.position);
+                }
+            }
+        }
     }
+
+    bool IsWaypoint(int index)
+    {
+        if (wayPoints.Count > index)
+        {
+            if (wayPoints[index] != null)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+    
+    
 }
