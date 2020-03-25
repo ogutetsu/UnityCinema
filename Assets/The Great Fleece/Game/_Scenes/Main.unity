@@ -22308,7 +22308,7 @@ MonoBehaviour:
   wayPoints:
   - {fileID: 0}
   - {fileID: 0}
-  currentTarget: {fileID: 0}
+  currentTarget: 0
 --- !u!1 &884064385
 GameObject:
   m_ObjectHideFlags: 0
@@ -31723,7 +31723,7 @@ MonoBehaviour:
   - {fileID: 4423840812647399}
   - {fileID: 4423841811029762}
   - {fileID: 438472098}
-  currentTarget: {fileID: 438472098}
+  currentTarget: 0
 --- !u!1001 &1339232139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33470,7 +33470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wayPoints: []
-  currentTarget: {fileID: 0}
+  currentTarget: 0
 --- !u!1 &1434464912
 GameObject:
   m_ObjectHideFlags: 0

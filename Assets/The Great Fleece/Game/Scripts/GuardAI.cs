@@ -6,58 +6,51 @@ using UnityEngine.AI;
 public class GuardAI : MonoBehaviour
 {
     public List<Transform> wayPoints;
-    public Transform currentTarget;
+    [SerializeField]
+    private int currentTarget;
+
+    private bool reverse;
 
     private NavMeshAgent agent;
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        if (wayPoints.Count > 0)
-        {
-            if (wayPoints[0] != null)
-            {
-                currentTarget = wayPoints[0];
-                agent.SetDestination(currentTarget.position);
-            }
-        }
+        
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if (currentTarget != null)
+        if (wayPoints.Count > 0 && wayPoints[currentTarget] != null)
         {
-            float distance = Vector3.Distance(transform.position, currentTarget.position);
+            agent.SetDestination(wayPoints[currentTarget].position);
+            float distance = Vector3.Distance(transform.position, wayPoints[currentTarget].position);
             if (distance < 1.0f)
             {
-                if (IsWaypoint(1) && currentTarget != wayPoints[1])
+                if (reverse == true)
                 {
-                    currentTarget = wayPoints[1];
-                    agent.SetDestination(currentTarget.position);
+                    currentTarget--;
+                    if (currentTarget == 0)
+                    {
+                        reverse = false;
+                        currentTarget = 0;
+                    }
                 }
-                else if (IsWaypoint(2))
+                else
                 {
-                    currentTarget = wayPoints[2];
-                    agent.SetDestination(currentTarget.position);
+                    currentTarget++;
+                    if (currentTarget == wayPoints.Count)
+                    {
+                        reverse = true;
+                        currentTarget--;
+                    }
                 }
             }
         }
+        
     }
 
-    bool IsWaypoint(int index)
-    {
-        if (wayPoints.Count > index)
-        {
-            if (wayPoints[index] != null)
-            {
-                return true;
-            }
-        }
-
-        return false;
-    }
-    
     
 }
