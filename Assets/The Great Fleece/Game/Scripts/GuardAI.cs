@@ -10,6 +10,7 @@ public class GuardAI : MonoBehaviour
     private int currentTarget;
 
     private bool reverse;
+    private bool targetReached;
 
     private NavMeshAgent agent;
     // Start is called before the first frame update
@@ -27,29 +28,69 @@ public class GuardAI : MonoBehaviour
         {
             agent.SetDestination(wayPoints[currentTarget].position);
             float distance = Vector3.Distance(transform.position, wayPoints[currentTarget].position);
-            if (distance < 1.0f)
+            if ((distance < 1.0f) && targetReached == false)
             {
-                if (reverse == true)
+                if (currentTarget == 0 || currentTarget == wayPoints.Count - 1)
                 {
-                    currentTarget--;
-                    if (currentTarget == 0)
-                    {
-                        reverse = false;
-                        currentTarget = 0;
-                    }
+                    targetReached = true;
+                    StartCoroutine(WaitBeforMoving());
                 }
                 else
                 {
-                    currentTarget++;
-                    if (currentTarget == wayPoints.Count)
+                    if (reverse == true)
                     {
-                        reverse = true;
                         currentTarget--;
+                        if (currentTarget < 0)
+                        {
+                            reverse = false;
+                            currentTarget = 0;
+                        }
+                    }
+                    else
+                    {
+                        currentTarget++;
                     }
                 }
             }
+            
+        }
+    }
+
+
+    IEnumerator WaitBeforMoving()
+    {
+        if(currentTarget == 0)
+        {
+            yield return new WaitForSeconds(2.0f);
+        }
+        else if (currentTarget == wayPoints.Count - 1)
+        {
+            yield return new WaitForSeconds(2.0f);
+        }
+        else
+        {
+            yield return null;
         }
         
+        if (reverse)
+        {
+            currentTarget--;
+            if (currentTarget < 0)
+            {
+                reverse = false;
+                currentTarget = 0;
+            }
+        }
+        else
+        {
+            currentTarget++;
+            if (currentTarget == wayPoints.Count)
+            {
+                reverse = true;
+                currentTarget--;
+            }
+        }
+        targetReached = false;
     }
 
     
