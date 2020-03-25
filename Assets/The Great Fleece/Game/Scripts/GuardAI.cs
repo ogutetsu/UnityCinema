@@ -31,15 +31,21 @@ public class GuardAI : MonoBehaviour
             
             float distance = Vector3.Distance(transform.position, wayPoints[currentTarget].position);
 
-            if (distance < 1 && (currentTarget == 0 || currentTarget == wayPoints.Count-1))
+            if (distance < 1 && (currentTarget == 0 || currentTarget == wayPoints.Count - 1))
             {
-                anim.SetBool("Walk", false);
+                if (anim != null)
+                {
+                    anim.SetBool("Walk", false);
+                }
             }
             else
             {
-                anim.SetBool("Walk", true);
+                if (anim != null)
+                {
+                    anim.SetBool("Walk", true);
+                }
             }
-            
+
             if ((distance < 1.0f) && targetReached == false)
             {
                 if (currentTarget == 0 || currentTarget == wayPoints.Count - 1)
