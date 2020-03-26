@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Serialization;
 
 public class Player : MonoBehaviour
 {
 
+    public GameObject coinPrefab;
+    public AudioClip coinSoundPrefab;
     private NavMeshAgent _agent;
     private Animator _anim;
     private Vector3 _target;
@@ -38,6 +41,19 @@ public class Player : MonoBehaviour
         if (distance < 1.0f)
         {
             _anim.SetBool("Walk", false);
+        }
+
+
+        if (Input.GetMouseButtonDown(1))
+        {
+            Ray rayOrigin = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hitInfo;
+            if (Physics.Raycast(rayOrigin, out hitInfo))
+            {
+                Instantiate(coinPrefab, hitInfo.point, Quaternion.identity);
+                AudioSource.PlayClipAtPoint(coinSoundPrefab, transform.position);
+            }
+            
         }
 
     }
