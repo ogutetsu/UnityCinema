@@ -1,18 +1,16 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class VoiceOverTrigger : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public AudioClip clipToPlay;
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.tag == "Player")
+        {
+            AudioSource.PlayClipAtPoint(clipToPlay, Camera.main.transform.position);
+        }
     }
 }
