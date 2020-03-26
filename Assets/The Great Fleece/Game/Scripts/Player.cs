@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     private NavMeshAgent _agent;
     private Animator _anim;
     private Vector3 _target;
+    private bool coinToss;
     
     // Start is called before the first frame update
     void Start()
@@ -44,17 +45,35 @@ public class Player : MonoBehaviour
         }
 
 
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButtonDown(1) && coinToss == false)
         {
             Ray rayOrigin = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
             if (Physics.Raycast(rayOrigin, out hitInfo))
             {
+                coinToss = true;
                 Instantiate(coinPrefab, hitInfo.point, Quaternion.identity);
                 AudioSource.PlayClipAtPoint(coinSoundPrefab, transform.position);
+                SendAIToCoinSpot(hitInfo.point);
             }
-            
         }
-
     }
+
+
+    void SendAIToCoinSpot(Vector3 coinPos)
+    {
+        GameObject[] guards = GameObject.FindGameObjectsWithTag("Guard1");
+        foreach (var guard in guards)
+        {
+            NavMeshAgent currentAgent = guard.GetComponent<NavMeshAgent>();
+            GuardAI currentGuard = guard.GetComponent<GuardAI>();
+            Animator currentAnim = guard.GetComponent<Animator>();
+
+            currentGuard.coinTossed = true;
+            currentAgent.SetDestination(coinPos);
+            currentAnim.SetBool("Walk", true);
+            currentGuard.coinPos = coinPos;
+        }
+    }
+    
 }

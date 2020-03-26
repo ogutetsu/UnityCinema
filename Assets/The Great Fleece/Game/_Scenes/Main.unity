@@ -12603,7 +12603,7 @@ GameObject:
   - component: {fileID: 438472098}
   m_Layer: 0
   m_Name: Point_C
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14103,7 +14103,7 @@ GameObject:
   - component: {fileID: 492617002}
   m_Layer: 0
   m_Name: Point_H
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15266,7 +15266,7 @@ GameObject:
   - component: {fileID: 544091732}
   m_Layer: 0
   m_Name: Point_E
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21606,7 +21606,7 @@ GameObject:
   - component: {fileID: 812997441}
   m_Layer: 0
   m_Name: Point_F
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22634,9 +22634,9 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1.5
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 0
@@ -22656,6 +22656,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   wayPoints:
   - {fileID: 1235758871}
+  coinTossed: 0
+  coinPos: {x: 0, y: 0, z: 0}
   currentTarget: 0
 --- !u!95 &882925276
 Animator:
@@ -30789,7 +30791,7 @@ GameObject:
   - component: {fileID: 1235758871}
   m_Layer: 0
   m_Name: Point_D
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32228,9 +32230,9 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1.5
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 0
@@ -32252,6 +32254,8 @@ MonoBehaviour:
   - {fileID: 4423840812647399}
   - {fileID: 4423841811029762}
   - {fileID: 438472098}
+  coinTossed: 0
+  coinPos: {x: 0, y: 0, z: 0}
   currentTarget: 0
 --- !u!95 &1335131609
 Animator:
@@ -34010,9 +34014,9 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1.5
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 2
   m_BaseOffset: 0
@@ -34035,6 +34039,8 @@ MonoBehaviour:
   - {fileID: 812997441}
   - {fileID: 2109527518}
   - {fileID: 492617002}
+  coinTossed: 0
+  coinPos: {x: 0, y: 0, z: 0}
   currentTarget: 0
 --- !u!95 &1433757485
 Animator:
@@ -50798,7 +50804,7 @@ GameObject:
   - component: {fileID: 2109527518}
   m_Layer: 0
   m_Name: Point_G
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51580,7 +51586,7 @@ GameObject:
   - component: {fileID: 4423840812647399}
   m_Layer: 0
   m_Name: Point_A
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -51596,7 +51602,7 @@ GameObject:
   - component: {fileID: 4423841811029762}
   m_Layer: 0
   m_Name: Point_B
-  m_TagString: Guard1
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
