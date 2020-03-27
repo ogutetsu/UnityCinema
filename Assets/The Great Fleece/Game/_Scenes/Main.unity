@@ -11326,6 +11326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCutscene: {fileID: 1588847950}
+  anim: {fileID: 1225287527}
 --- !u!54 &363735634
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51814,6 +51815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverCutscene: {fileID: 1588847950}
+  anim: {fileID: 1978270306}
 --- !u!54 &2142379294
 Rigidbody:
   m_ObjectHideFlags: 0
