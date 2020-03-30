@@ -9007,6 +9007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f00663dff9ab25745bc0fc3d14ea94c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  introCutScene: {fileID: 19644797}
 --- !u!4 &240940202
 Transform:
   m_ObjectHideFlags: 0
@@ -23023,7 +23024,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1ee40b7ef84b343d09eb49e17dc9f455, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.418
+  m_Volume: 0.274
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -34209,6 +34210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   voiceOver: {fileID: 1036539351}
+  music: {fileID: 881415031}
 --- !u!1 &1392345927
 GameObject:
   m_ObjectHideFlags: 0

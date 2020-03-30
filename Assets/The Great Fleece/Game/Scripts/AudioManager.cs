@@ -14,7 +14,7 @@ public class AudioManager : MonoBehaviour
 
 
     public AudioSource voiceOver;
-
+    public AudioSource music;
 
     private void Awake()
     {
@@ -25,6 +25,11 @@ public class AudioManager : MonoBehaviour
     {
         voiceOver.clip = audioClip;
         voiceOver.Play();
+    }
+
+    public void PlayMusic()
+    {
+        music.Play();
     }
     
 }

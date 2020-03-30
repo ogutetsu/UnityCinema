@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,10 +18,21 @@ public class GameManager : MonoBehaviour
         get;
         set;
     }
+
+    public PlayableDirector introCutScene; 
     
 
     private void Awake()
     {
         instance = this;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            introCutScene.time = 60.0f;
+            AudioManager.Instance.PlayMusic();
+        }
     }
 }
