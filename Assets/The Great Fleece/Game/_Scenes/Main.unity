@@ -332,7 +332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &19644795
 Transform:
   m_ObjectHideFlags: 0
@@ -388,8 +388,10 @@ PlayableDirector:
     value: {fileID: 933013644}
   - key: {fileID: 7111467277949906853, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
     value: {fileID: 1657463409}
-  - key: {fileID: 8386098502016666741, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
-    value: {fileID: 0}
+  - key: {fileID: -1120440093896832664, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
+    value: {fileID: 881415031}
+  - key: {fileID: 5456326035967860672, guid: 3f0955f1701f4a84bb893d655c66a04a, type: 2}
+    value: {fileID: 881415032}
   m_ExposedReferences:
     m_References:
     - dd2c6da28d8898c44adaf38987e3ce3b: {fileID: 572551983}
@@ -22961,6 +22963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 881415030}
   - component: {fileID: 881415031}
+  - component: {fileID: 881415032}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -22993,7 +22996,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 1ee40b7ef84b343d09eb49e17dc9f455, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.418
   m_Pitch: 1
   Loop: 1
@@ -23078,6 +23081,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &881415032
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881415029}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &882925272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50695,8 +50717,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: -0.18482845, y: -0.14791097, z: -0.028149752, w: -0.76783854}
-  m_LocalPosition: {x: 5.393775, y: -1.9, z: -88.11588}
+  m_LocalRotation: {x: 0.04369977, y: -0.94099087, z: -0.13356628, w: -0.30787417}
+  m_LocalPosition: {x: 0.12631035, y: 1.8458328, z: -58.683617}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
