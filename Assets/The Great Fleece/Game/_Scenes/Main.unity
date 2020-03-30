@@ -33778,6 +33778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d3cee2ee0a272498fdffa0db32ef03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  voiceOver: {fileID: 1036539351}
 --- !u!1 &1392345927
 GameObject:
   m_ObjectHideFlags: 0
