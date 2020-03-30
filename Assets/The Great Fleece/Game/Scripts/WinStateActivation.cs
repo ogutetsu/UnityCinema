@@ -1,18 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class WinStateActivation : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject winCutScene;
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.tag == "Player")
+        {
+            if (GameManager.Instance.HasCard == true)
+            {
+                winCutScene.SetActive(true);
+            }
+            else
+            {
+                Debug.Log("You most grab the card key");
+            }
+        }
     }
 }

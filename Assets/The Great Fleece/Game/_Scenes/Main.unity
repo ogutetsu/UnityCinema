@@ -32771,9 +32771,12 @@ PlayableDirector:
     value: {fileID: 1070322453}
   - key: {fileID: 4777643084135456784, guid: 9f1cdfc4bc1e9dc4ca5adfb453eaeb9d, type: 2}
     value: {fileID: 1343978857}
+  - key: {fileID: 1193268226825326503, guid: 9f1cdfc4bc1e9dc4ca5adfb453eaeb9d, type: 2}
+    value: {fileID: 841442094}
   m_ExposedReferences:
     m_References:
     - f075b1943ecc88e4fbdcb2865ca46eb6: {fileID: 1277107813}
+    - d9bad848770e0a34c89fd5aaf04df3a4: {fileID: 1288686449}
     - eee4c3411bf08d448b1d39b7f514ac60: {fileID: 1277107813}
     - 4ba3be04b9fc9fb47afc8939ab44caed: {fileID: 1006550138}
 --- !u!1001 &1352609458
@@ -34669,6 +34672,8 @@ GameObject:
   - component: {fileID: 1460912867}
   - component: {fileID: 1460912866}
   - component: {fileID: 1460912865}
+  - component: {fileID: 1460912869}
+  - component: {fileID: 1460912868}
   m_Layer: 0
   m_Name: Win_Cut_Scene_Zone
   m_TagString: Untagged
@@ -34737,7 +34742,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460912863}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 3.6767442, y: 0.99660206, z: 1.5074341}
@@ -34750,6 +34755,35 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460912863}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &1460912868
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460912863}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1460912869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460912863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2b2e86f39b8abb4492e4ef8250dd292, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winCutScene: {fileID: 1030582595}
 --- !u!1001 &1464570826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50068,7 +50102,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043896029}
-  m_LocalRotation: {x: -0.10080426, y: -0.8980958, z: 0.298611, w: -0.3067472}
+  m_LocalRotation: {x: -0.099722646, y: -0.8884593, z: 0.29540694, w: -0.33679914}
   m_LocalPosition: {x: -9.737014, y: 12.446232, z: -95.11419}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -52244,22 +52278,22 @@ PrefabInstance:
     - target: {fileID: 6791404968738775006, guid: ec558e4b376682d40af82cb705899237,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.040242124
+      value: -0.03658918
       objectReference: {fileID: 0}
     - target: {fileID: 6791404968738775006, guid: ec558e4b376682d40af82cb705899237,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.934204
+      value: 0.93536186
       objectReference: {fileID: 0}
     - target: {fileID: 6791404968738775006, guid: ec558e4b376682d40af82cb705899237,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.11176077
+      value: -0.10161581
       objectReference: {fileID: 0}
     - target: {fileID: 6791404968738775006, guid: ec558e4b376682d40af82cb705899237,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.3363824
+      value: -0.33679914
       objectReference: {fileID: 0}
     - target: {fileID: 6791404968738775006, guid: ec558e4b376682d40af82cb705899237,
         type: 3}
